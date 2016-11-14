@@ -42,7 +42,6 @@ $(function() {
       dataType: "",
       timeout: 2000,
       success: function(data) {
-        console.log(data)
           reloadList();
           clearErrorBox();
           console.log("Successfully added item: " + description);
@@ -79,7 +78,6 @@ function reloadList() {
       var glyph = $("<span/>").addClass("glyphicon glyphicon-remove");
       del.append(glyph);
       var descr = $("<div/>").addClass("description").html(item.description);
-      console.log(item.description + item.completed)
       if (item.completed) {
         checkbox.attr("checked", "checked");
         descr.css("text-decoration", "line-through");
