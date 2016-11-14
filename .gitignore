@@ -1,0 +1,4 @@
+*.swp
+*.pyc
+todo.db
+env/*
