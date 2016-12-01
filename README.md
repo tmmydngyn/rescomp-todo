@@ -1,5 +1,4 @@
-# rescomp-todo
-2016 ResComp Programmers Workshop
+# Simple Todo App
 
 [For Windows Users](#windows)<br />
 [For *nix Users](#unix)<br />
@@ -25,16 +24,16 @@ You'll need the same packages as above (git, Python), though many *nix flavors h
 
 First, let's download all the files for our application and change into that directory.
 ```
-git clone https://github.com/tmmydngyn/rescomp-todo
+git clone https://github.com/tmmydngyn/simple-todo
 ```
 Now, let's create the virtual environment for our app. For simplicity, let's put it into the directory where our app lives. This isn't necessary (see details below).
 ```
-cd rescomp-todo
+cd simple-todo
 virtualenv todo-app # makes a virtual environment called todo-app
 ```
 Finally, we'll enter our virtual environment and install the dependencies for our app.
 ```
-source todo-app/bin/activate
+source simple-app/bin/activate
 pip install -r requirements.txt
 ```
 Check if the packages were installed correctly by running `pip freeze`. You should see the following:
@@ -66,7 +65,7 @@ When inside a virtualenv, `pip install` will install packages into `todo-app/` r
 
 Now that everything's installed, you can run your app. To do so, you'll need to activate your virtualenv so that Python knows to look for the dependencies in your virtualenv instead of globally on your machine.
 
-Assuming you're still in the rescomp-todo directory:
+Assuming you're still in the simple-todo directory:
 ```
 virtualenv todo-app
 python todo.py
